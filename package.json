@@ -1,0 +1,30 @@
+{
+  "name": "payment-plan-comparer",
+  "version": "0.0.1",
+  "description": "Compare plan of payment service.",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camelmasa/payment-plan-comparer.git"
+  },
+  "author": "Masahiro Saito",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/camelmasa/payment-plan-comparer/issues"
+  },
+  "homepage": "https://github.com/camelmasa/payment-plan-comparer",
+  "scripts": {
+    "build": "./node_modules/babel-cli/bin/babel.js src --out-dir lib --source-maps",
+    "watch": "./node_modules/babel-cli/bin/babel.js babel src --out-dir lib --watch --source-maps",
+    "pretest": "npm run build",
+    "test": "(cd example && npm test)",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1"
+  }
+}
