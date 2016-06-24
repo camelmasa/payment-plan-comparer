@@ -25,6 +25,7 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "babel-cli": "^6.10.1"
+    "babel-cli": "^6.10.1",
+    "babel-preset-es2015": "^6.9.0"
   }
 }
