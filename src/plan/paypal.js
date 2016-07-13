@@ -7,6 +7,7 @@ export default class PayPal extends Plan {
     super(monthlySale, monthlyTransaction)
 
     this.name           = "PayPal エクスプレスチェックアウト"
+    this.serviceUrl     = "https://www.paypal.com"
     this.transactionFee = 40
   }
 

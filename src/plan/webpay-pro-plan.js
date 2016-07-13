@@ -7,6 +7,7 @@ export default class WebPayProPlan extends Plan {
     super(monthlySale, monthlyTransaction)
 
     this.name           = "WebPay プロプラン"
+    this.serviceUrl     = "https://webpay.jp"
     this.percentageFee  = 2.69
     this.monthlyFee     = 9800
   }

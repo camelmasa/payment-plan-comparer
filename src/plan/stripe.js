@@ -7,6 +7,7 @@ export default class Stripe extends Plan {
     super(monthlySale, monthlyTransaction)
 
     this.name           = "Stripe"
+    this.serviceUrl     = "https://stripe.com"
     this.percentageFee  = 3.6
   }
 }

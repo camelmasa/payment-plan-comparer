@@ -7,6 +7,7 @@ export default class FastPay extends Plan {
     super(monthlySale, monthlyTransaction)
 
     this.name           = "FastPay"
+    this.serviceUrl     = "https://fastpay.yahoo.co.jp"
     this.percentageFee  = 3.25
   }
 }
