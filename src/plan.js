@@ -10,11 +10,15 @@ export default class Plan {
     this.monthlyFee     = 0
   }
 
-  service() {
+  plan() {
     return {
       name: this.name,
       serviceUrl: this.serviceUrl,
-      monthlyFee: this.monthlySale * this.percentageFee / 100 + this.transactionFee * this.monthlyTransaction + this.monthlyFee
+      monthlyFee: this.calculateMonthlyFee()
     }
+  }
+
+  calculateMonthlyFee() {
+    return this.monthlySale * this.percentageFee / 100 + this.transactionFee * this.monthlyTransaction + this.monthlyFee
   }
 }

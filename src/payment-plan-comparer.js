@@ -18,14 +18,14 @@ export default class PaymentPlanComparer {
 
   compare() {
     return  [
-      new Komoju(this.monthlySale, this.monthlyTransaction).service(),
-      new Payjp(this.monthlySale, this.monthlyTransaction).service(),
-      new PayPal(this.monthlySale, this.monthlyTransaction).service(),
-      new SpikeBusinessPlan(this.monthlySale, this.monthlyTransaction).service(),
-      new SpikeFreePlan(this.monthlySale, this.monthlyTransaction).service(),
-      new Stripe(this.monthlySale, this.monthlyTransaction).service(),
-      new WebPayProPlan(this.monthlySale, this.monthlyTransaction).service(),
-      new WebPayStarterPlan(this.monthlySale, this.monthlyTransaction).service()
+      new Komoju(this.monthlySale, this.monthlyTransaction).plan(),
+      new Payjp(this.monthlySale, this.monthlyTransaction).plan(),
+      new PayPal(this.monthlySale, this.monthlyTransaction).plan(),
+      new SpikeBusinessPlan(this.monthlySale, this.monthlyTransaction).plan(),
+      new SpikeFreePlan(this.monthlySale, this.monthlyTransaction).plan(),
+      new Stripe(this.monthlySale, this.monthlyTransaction).plan(),
+      new WebPayProPlan(this.monthlySale, this.monthlyTransaction).plan(),
+      new WebPayStarterPlan(this.monthlySale, this.monthlyTransaction).plan()
     ]
   }
 }
