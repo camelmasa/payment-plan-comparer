@@ -8,6 +8,8 @@ export default class Stripe extends Plan {
 
     this.name           = "Stripe"
     this.serviceUrl     = "https://stripe.com"
+    // https://support.stripe.com/questions/which-cards-and-payment-types-can-i-accept-with-stripe
+    this.brands         = ["Visa", "MasterCard", "American Express"]
     this.percentageFee  = 3.6
   }
 }
