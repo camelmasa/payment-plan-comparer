@@ -4,6 +4,7 @@ export default class Plan {
   constructor(monthlySale, monthlyTransaction) {
     this.monthlySale        = monthlySale
     this.monthlyTransaction = monthlyTransaction
+    this.paymentMethods     = ["CreditCard"]
 
     this.percentageFee  = 0.0
     this.transactionFee = 0
@@ -15,6 +16,7 @@ export default class Plan {
       name: this.name,
       serviceUrl: this.serviceUrl,
       brands: this.brands,
+      paymentMethods: this.paymentMethods,
       monthlyFee: this.calculateMonthlyFee()
     }
   }
