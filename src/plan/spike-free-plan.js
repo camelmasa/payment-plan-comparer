@@ -7,6 +7,7 @@ export default class SpikeFreePlan extends Plan {
     super(monthlySale, monthlyTransaction)
 
     this.name           = "SPIKE フリープラン"
+    this.serviceUrl     = "https://spike.cc"
     this.percentageFee  = 3.9
     this.transactionFee = 30
   }

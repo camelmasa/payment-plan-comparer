@@ -13,6 +13,7 @@ export default class Plan {
   service() {
     return {
       name: this.name,
+      serviceUrl: this.serviceUrl,
       monthlyFee: this.monthlySale * this.percentageFee / 100 + this.transactionFee * this.monthlyTransaction + this.monthlyFee
     }
   }

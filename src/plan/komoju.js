@@ -7,6 +7,7 @@ export default class Komoju extends Plan {
     super(monthlySale, monthlyTransaction)
 
     this.name           = "Komoju"
+    this.serviceUrl     = "https://komoju.com"
     this.percentageFee  = 3.25
   }
 }
