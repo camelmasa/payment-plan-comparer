@@ -12,7 +12,7 @@ export default class PayPal extends Plan {
     this.transactionFee = 40
   }
 
-  service() {
+  plan() {
     let monthlyFee
 
     if (this.monthlySale <= 300000) {

@@ -14,7 +14,7 @@ export default class SpikeFreePlan extends Plan {
     this.transactionFee = 30
   }
 
-  service() {
+  plan() {
     let monthlyFee
 
     if (this.monthlySale <= 100000) {
