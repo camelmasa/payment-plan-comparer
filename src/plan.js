@@ -14,6 +14,7 @@ export default class Plan {
     return {
       name: this.name,
       serviceUrl: this.serviceUrl,
+      brands: this.brands,
       monthlyFee: this.calculateMonthlyFee()
     }
   }

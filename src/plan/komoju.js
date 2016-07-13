@@ -8,6 +8,7 @@ export default class Komoju extends Plan {
 
     this.name           = "Komoju"
     this.serviceUrl     = "https://komoju.com"
+    this.brands         = ["Visa", "MasterCard", "JCB", "American Express", "Diners Club"]
     this.percentageFee  = 3.25
   }
 }

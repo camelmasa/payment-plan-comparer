@@ -8,6 +8,7 @@ export default class PayPal extends Plan {
 
     this.name           = "PayPal エクスプレスチェックアウト"
     this.serviceUrl     = "https://www.paypal.com"
+    this.brands         = ["Visa", "MasterCard", "JCB", "American Express"]
     this.transactionFee = 40
   }
 

@@ -8,6 +8,7 @@ export default class SpikeFreePlan extends Plan {
 
     this.name           = "SPIKE フリープラン"
     this.serviceUrl     = "https://spike.cc"
+    this.brands         = ["Visa", "MasterCard"]
     this.percentageFee  = 3.9
     this.transactionFee = 30
   }

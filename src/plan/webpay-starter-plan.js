@@ -8,6 +8,7 @@ export default class WebPayStarterPlan extends Plan {
 
     this.name           = "WebPay スタータープラン"
     this.serviceUrl     = "https://webpay.jp"
+    this.brands         = ["Visa", "MasterCard", "JCB", "American Express", "Diners Club"]
     this.percentageFee  = 3.25
   }
 }
