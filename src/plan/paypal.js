@@ -13,20 +13,22 @@ export default class PayPal extends Plan {
   }
 
   plan() {
-    let monthlyFee
+    let percentage
 
     if (this.monthlySale <= 300000) {
-      monthlyFee = this.monthlySale * 3.6 / 100 + this.transactionFee * this.monthlyTransaction
+      percentage = 3.6
     }
     else if (this.monthlySale <= 1000000) {
-      monthlyFee = this.monthlySale * 3.4 / 100 + this.transactionFee * this.monthlyTransaction
+      percentage = 3.4
     }
     else if (this.monthlySale <= 10000000) {
-      monthlyFee = this.monthlySale * 3.2 / 100 + this.transactionFee * this.monthlyTransaction
+      percentage = 3.2
     }
     else {
-      monthlyFee = this.monthlySale * 2.9 / 100 + this.transactionFee * this.monthlyTransaction
+      percentage = 2.9
     }
+
+    const monthlyFee = this.monthlySale * percentage / 100 + this.transactionFee * this.monthlyTransaction
 
     return {
       name: this.name,
