@@ -12,7 +12,7 @@ export default class PayPal extends Plan {
     this.transactionFee = 40
   }
 
-  plan() {
+  calculateMonthlyFee() {
     let percentage
 
     if (this.monthlySale <= 300000) {
@@ -28,11 +28,6 @@ export default class PayPal extends Plan {
       percentage = 2.9
     }
 
-    const monthlyFee = this.monthlySale * percentage / 100 + this.transactionFee * this.monthlyTransaction
-
-    return {
-      name: this.name,
-      monthlyFee: monthlyFee
-    }
+    return this.monthlySale * percentage / 100 + this.transactionFee * this.monthlyTransaction
   }
 }

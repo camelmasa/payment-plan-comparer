@@ -14,19 +14,12 @@ export default class SpikeFreePlan extends Plan {
     this.transactionFee = 30
   }
 
-  plan() {
-    let monthlyFee
-
+  calculateMonthlyFee() {
     if (this.monthlySale <= 100000) {
-      monthlyFee = 0
+      return 0
     }
     else {
-      monthlyFee = this.monthlySale * this.percentageFee / 100 + this.transactionFee * this.monthlyTransaction
-    }
-
-    return {
-      name: this.name,
-      monthlyFee: monthlyFee
+      return this.monthlySale * this.percentageFee / 100 + this.transactionFee * this.monthlyTransaction
     }
   }
 }
